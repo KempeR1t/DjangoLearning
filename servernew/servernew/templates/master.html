@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block page_title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu_link">
+            <a href="/" class="menu_link-inner_contacts">Main</a>
+        </li>
+        <li class="menu_link">
+            <a href="/products/" class="menu_link-inner_contacts">Products</a>
+        </li>
+        <li class="menu_link">
+            <a href="/contacts/" class="menu_link-inner_contacts">Contacts</a>
+        </li>
+        <li class="menu_link">
+            <a href="/about/" class="menu_link-inner_about">About</a>
+        </li>
+    </ul>
+    <section class="page">
+        {% block page_content %}
+        {% endblock %}
+    </section>
+</body>
+</html>
