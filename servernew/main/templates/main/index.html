@@ -1,0 +1,18 @@
+{% extends 'master.html' %}
+
+{% block page_title %}
+    Page Title
+{% endblock %}
+
+{% block page_content %}
+    <section class="page">
+        <h1 class="page__title">
+           {{ title }}
+            {{ subtitle }}
+        </h1>
+        <h2 class="page_subtitle">
+            This is home page
+            <a href="contacts">contacts</a>
+        </h2>
+    </section>
+{% endblock %}
