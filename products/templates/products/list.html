@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+
+{% block page_title %}
+    Page Title
+{% endblock %}
+
+{% block page_content %}
+         <ul>
+        {% for itm in products  %}
+            {% include 'products/components/item.html' with count=forloop.counter0 name=itm %}
+        {% endfor %}
+         <a href="{% url 'main:about' %}">About</a>
+         <a href="{% url 'main:index' %}">Main Index</a>
+         <a href="{% url 'products:index' %}">Product index</a>
+    </ul>
+{% endblock %}

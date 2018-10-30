@@ -1,0 +1,14 @@
+{% extends 'master.html' %}
+
+{% block page_title %}
+    Page Title
+{% endblock %}
+
+{% block page_content %}
+    <h1>Hello World!!!!!!!!!!!!!!!!</h1>
+    <ul>
+        {% for itm  in contacts %}
+        <li>{{ itm }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
